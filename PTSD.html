@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                           <title>PTSD</title>
+                <link rel="icon" href="Assets/IMAGES/HEPlogo.png">
+
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                <link rel="stylesheet" href="Assets/css/styles.css">
+            </head>
+            <body>
+  
+    <div class="navbar">
+        <img src="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Assets/IMAGES/HEPlogo.png" alt="Logo" class="logo">
+        <div class="logo-container">
+            <h1 class="logo-title"> HealthEdPro </h1>
+            <h2 class="logo-subtitle">Selfcare</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Emergency.html"><i class="fas fa-exclamation-triangle"></i>Emergency</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Community_Page.html"><i class="fas fa-users"></i>Community</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Signup_Form_Health_Ed_Pro.html"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+            </ul>
+        </nav>
+        
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars" id="hamburger-icon"></i>
+        </button>
+        </div>
+        <div class="mobile-nav" id="mobile-nav">
+            <ul>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/">Home</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Signup_Form_Health_Ed_Pro">Login</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/test.html">Assess Yourself</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Emergency.html">Emergency</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Library.html">Library</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Community_Page.html">Community</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Blog_Page.html">Blog</a></li>
+                <li><a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Review.html">Reviews</a></li>
+            </ul>
+        </div>
+    
+
+    <script>
+        function toggleMenu() {
+    const mobileNav = document.getElementById('mobile-nav');
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    mobileNav.classList.toggle('show');
+    if (mobileNav.classList.contains('show')) {
+        hamburgerIcon.classList.remove('fa-bars');
+        hamburgerIcon.classList.add('fa-times'); // Change to close icon
+    } else {
+        hamburgerIcon.classList.remove('fa-times');
+        hamburgerIcon.classList.add('fa-bars'); // Change back to hamburger icon
+    }
+}
+
+// Close the mobile menu when clicking outside of it
+document.addEventListener('click', function(event) {
+    const mobileNav = document.getElementById('mobile-nav');
+    const hamburgerButton = document.querySelector('.menu-toggle');
+
+    // Check if the click was outside the mobile nav and hamburger button
+    if (!mobileNav.contains(event.target) && !hamburgerButton.contains(event.target)) {
+        if (mobileNav.classList.contains('show')) {
+            mobileNav.classList.remove('show');
+            hamburgerButton.querySelector('i').classList.remove('fa-times');
+            hamburgerButton.querySelector('i').classList.add('fa-bars'); // Change back to hamburger icon
+        }
+    }
+});
+    </script>
+                <!--Content Section-->
+                <div class="container">
+                    <header>
+                        <h1>PTSD</h1>
+                        <p class="intro">Posttraumatic stress disorder (PTSD) is a psychiatric disorder that may occur in people who have experienced or witnessed a traumatic event, series of events or set of circumstances. An individual may experience this as emotionally or physically harmful or life-threatening and may affect mental, physical, social, and/or spiritual well-being. Examples include natural disasters, serious accidents, terrorist acts, war/combat, rape/sexual assault, historical trauma, intimate partner violence and bullying,
+                            <br/>
+                            PTSD has been known by many names in the past, such as “shell shock” during the years of World War I and “combat fatigue” after World War II, but PTSD does not just happen to combat veterans. PTSD can occur in all people, of any ethnicity, nationality or culture, and at any age. PTSD affects approximately 3.5 percent of U.S. adults every year. The lifetime prevalence of PTSD in adolescents ages 13 -18 is 8%. An estimate one in 11 people will be diagnosed with PTSD in their lifetime. Women are twice as likely as men to have PTSD. Three ethnic groups – U.S. Latinos, African Americans, and Native Americans/Alaska Natives – are disproportionately affected and have higher rates of PTSD than non-Latino whites.
+                        </p>
+                        <br/>
+                        <p>People with PTSD have intense, disturbing thoughts and feelings related to their experience that last long after the traumatic event has ended. They may relive the event through flashbacks or nightmares; they may feel sadness, fear or anger; and they may feel detached or estranged from other people. People with PTSD may avoid situations or people that remind them of the traumatic event, and they may have strong negative reactions to something as ordinary as a loud noise or an accidental touch.</p>
+                        <br/>
+                        <p>A diagnosis of PTSD requires exposure to an upsetting traumatic event. Exposure includes directly experiencing an event, witnessing a traumatic event happening to others, or learning that a traumatic event happened to a close family member or friend. It can also occur as a result of repeated exposure to horrible details of trauma such as police officers exposed to details of child abuse cases.</p>
+                        
+                    </header>
+                    
+                    
+                   <br/>
+                    <section id="Symptoms and Diagnosis">
+                        <h2 class="h2">Symptoms and Diagnosis</h2>
+                       <p>Symptoms of PTSD fall into the following four categories. Specific symptoms can vary in severity.</p>
+                       <br/>
+                    <li><strong>Intrusion:</strong> Intrusive thoughts such as repeated, involuntary memories; distressing dreams; or flashbacks of the traumatic event. Flashbacks may be so vivid that people feel they are reliving the traumatic experience or seeing it before their eyes.</li>
+                        <li><strong>Avoidance</strong> Avoiding reminders of the traumatic event may include avoiding people, places, activities, objects and situations that may trigger distressing memories. People may try to avoid remembering or thinking about the traumatic event. They may resist talking about what happened or how they feel about it.</li>
+                        <li><strong>Alterations in cognition and mood:</strong> Inability to remember important aspects of the traumatic event, negative thoughts and feelings leading to ongoing and distorted beliefs about oneself or others (e.g., “I am bad,” “No one can be trusted”); distorted thoughts about the cause or consequences of the event leading to wrongly blaming self or other; ongoing fear, horror, anger, guilt or shame; much less interest in activities previously enjoyed; feeling detached or estranged from others; or being unable to experience positive emotions (a void of happiness or satisfaction).</li>
+                       <li><strong>Alterations in arousal and reactivity:</strong> Arousal and reactive symptoms may include being irritable and having angry outbursts; behaving recklessly or in a self-destructive way; being overly watchful of one's surroundings in a suspecting way; being easily startled; or having problems concentrating or sleeping.</li>
+                       <br/>
+                       <p>Many people who are exposed to a traumatic event experience symptoms similar to those described above in the days following the event. For a person to be diagnosed with PTSD, however, symptoms must last for more than a month and must cause significant distress or problems in the individual's daily functioning. Many individuals develop symptoms within three months of the trauma, but symptoms may appear later and often persist for months and sometimes years. PTSD often occurs with other related conditions, such as depression, substance use, memory problems and other physical and mental health problems.</p>
+                       <br/>
+
+                           
+                    </section>
+                        <section id="Treatment"></section>
+                        <h2 class="h2">Treatment</h2>
+                       <p>It is important to note that not everyone who experiences trauma develops PTSD, and not everyone who develops PTSD requires psychiatric treatment. For some people, symptoms of PTSD subside or disappear over time. Others get better with the help of their support system (family, friends or clergy). But many people with PTSD need professional treatment to recover from psychological distress that can be intense and disabling. It is important to remember that trauma may lead to severe distress. That distress is not the individual’s fault, and PTSD is treatable. The earlier a person gets treatment, the better chance of recovery.</p>
+                       <br/>
+                       <p>Psychiatrists and other mental health professionals use various effective (research-proven) methods to help people recover from PTSD. Both talk therapy (psychotherapy) and medication provide effective evidence-based treatments for PTSD.</p>
+                    </section>
+
+                    <section id="Cognitive Behavioral Therapy">
+                        <h3 class="h3">Cognitive Behavioral Therapy</h3>
+                    <p>One category of psychotherapy, cognitive behavior therapies (CBT), is very effective. Cognitive processing therapy, prolonged exposure therapy and stress inoculation therapy (described below) are among the types of CBT used to treat PTSD.</p>
+                    <li><strong>Cognitive Processing Therapy</strong> is an evidence-based, cognitive behavioral therapy designed specifically to treat PTSD and comorbid symptoms. It focuses on changing painful negative emotions (such as shame, guilt, etc.) and beliefs (such as “I have failed;” “the world is dangerous”) due to the trauma. Therapists help the person confront such distressing memories and emotions.</li>
+                    <li><strong>Prolonged Exposure Therapy</strong> uses repeated, detailed imagining of the trauma or progressive exposures to symptom “triggers” in a safe, controlled way to help a person face and gain control of fear and distress and learn to cope. For example, virtual reality programs have been used to help war veterans with PTSD re-experience the battlefield in a controlled, therapeutic way.</li>
+                    <li><strong>Trauma Focused Cognitive Behavioral Therapy</strong> is an evidence-based treatment model for children and adolescents that incorporates trauma-sensitive interventions with cognitive behavioral, family, and humanistic principles and techniques.</li>
+                    <li><strong>Eye Movement Desensitization and Reprocessing for PTSD</strong> is a trauma-focused psychotherapy which is administered over approximately 3 months. This therapy helps a person to reprocess the memory of the trauma so that it is experienced in a different way. After a thorough history is taken and a treatment plan developed the therapist guides the patient through questions about the traumatic memory. Eye movements similar to those in REM sleep is recreated during a session by having the patient watch the therapist’s fingers go back and forth or by watching a light bar. The eye movements last for a brief time period and then stop. Experiences during a session may include changes in thoughts, images, and feelings. After repeated sessions  the memory tends to change and is experienced in a less negative manner.</li> 
+                    <li><strong>Eye Movement Desensitization and Reprocessing for PTSD</strong> encourages survivors of similar traumatic events to share their experiences and reactions in a comfortable and non-judgmental setting. Group members help one another realize that many people would have responded the same way and felt the same emotions. Family therapy may also help because the behavior and distress of the person with PTSD can affect the entire family.</li> 
+                    <br/>
+                    <p>Other psychotherapies such as interpersonal, supportive and psychodynamic therapies focus on the emotional and interpersonal aspects of PTSD. These may be helpful for people who do not want to expose themselves to reminders of their traumas.</p>
+                    </section>
+
+                            <section id="Medication">
+                                <h2 class="h2">Medication</h2>
+                                <p>Medication can help to control the symptoms of PTSD. In addition, the symptom relief that medication provides allows many people to participate more effectively in psychotherapy.</p>
+                                <br/>
+                                <p>Some antidepressants such as SSRIs and SNRIs (selective serotonin re-uptake inhibitors and serotonin-norepinephrine re-uptake inhibitors), are commonly used to treat the core symptoms of PTSD. They are used either alone or in combination with psychotherapy or other treatments.
+                                </p>
+                                <br/>
+                                <p>Other medications may be used to lower anxiety and physical agitation, or treat the nightmares and sleep problems that trouble many people with PTSD.</p>
+                              
+                            </section>
+
+                            <section id="Other Treatments">
+                                <h2 class="h2">Other Treatments</h2>
+                                <p>Other treatments including complementary and alternative therapies are also increasingly being used to help people with PTSD. These approaches provide treatment outside the conventional mental health clinic and may require less talking and disclosure than psychotherapy. Examples include acupuncture, yoga and animal-assisted therapy.</p>
+                                <br/>
+                               <p>In addition to treatment, many people with PTSD find it very helpful to share their experiences and feelings with others who have similar experiences, such as in a peer support group.</p>              
+                             </section>
+
+          
+
+
+        <section id="A note from Health Ed Pro">
+            <h2 class="h2">A note from Health Ed Pro</h2>
+            <p><strong>
+                It may be very difficult to seek professional help following a traumatic event. Know that PTSD is treatable, and with time, treatment can help you feel better. Talk to your healthcare provider about therapy options and remember that they’re available to help and support you.
+             </strong></p>
+             </strong>
+        
+    <!--Content Section-->
+
+
+                    <div class="collapse-container">
+                        <details>
+                            <summary class="collapse-button">References</summary>
+                            <div class="collapsible-content">
+                                <p><li>
+                                    https://www.psychiatry.org/patients-families/ptsd/what-is-ptsd#section_0</li> <br> 
+                                <p><li>Cleveland Clinic
+                                    https://my.clevelandclinic.org/health/diseases/11429-sleep-disorders
+                                </li></p>
+                                <p><li>Google Gemini</li></p>
+                            </div>
+                        </details>
+                    </div>
+
+                <!--collapse container-->    
+                    <footer>
+                        <p>For more information, visit <a href="https://www.nida.nih.gov/" target="_blank">National Institute on Drug Abuse</a>.</p>
+                    </footer>
+                </div>
+
+    <!--Footer Section-->
+
+    <div class="pg-footer">
+        <footer class="footer">
+          <svg class="footer-wave-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 100" preserveAspectRatio="none">
+            <path class="footer-wave-path"
+              d="M851.8,100c125,0,288.3-45,348.2-64V0H0v44c3.7-1,7.3-1.9,11-2.9C80.7,22,151.7,10.8,223.5,6.3C276.7,2.9,330,4,383,9.8 c52.2,5.7,103.3,16.2,153.4,32.8C623.9,71.3,726.8,100,851.8,100z">
+            </path>
+          </svg>
+          <div class="footer-content">
+            <div class="footer-content-column">
+              <div class="footer-logo">
+                <a class="footer-logo-link" href="#">
+                  <span class="hidden-link-text">LOGO</span>
+                  <img src="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Assets/IMAGES/HEPlogo.png"
+                    alt="Logo" class="footer-logo">
+                </a>
+              </div>
+              <div class="footer-menu">
+                <h2 class="footer-menu-name"> Activities</h2>
+                <ul id="menu-get-started" class="footer-menu-list">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                    <a href="#">Welfares</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                    <a href="#">Collaborations</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                    <a href="#">Seminars</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                <h2 class="footer-menu-name"> Helpline No</h2>
+                <ul id="menu-company" class="footer-menu-list">
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                        href="tel:1800-599-0019" target="_self"> 1800-599-0019 </a></p>
+                  </li>
+                  <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                    <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                        href="tel:0124-64XXXX" target="_self"> 1-8008914416 </a></p>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                        href="tel:0124-64XXXX" target="_self"> 8376804102 </a></p>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <p class="footer-call-to-action-link-wrapper"> 9630899002 <a class="footer-call-to-action-link"
+                        href="tel:0124-64XXXX" target="_self"> </a></p>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link"
+                        href="tel:0124-64XXXX" target="_self"> 8322252525 </a></p>
+                  </li>
+    
+                </ul>
+              </div>
+              <div class="footer-menu">
+                <h2 class="footer-menu-name"> Terms and Conditions</h2>
+                <ul id="menu-legal" class="footer-menu-list">
+                  <li
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                    <a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Privacy_Policy.html">Privacy Policy</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Terms_of_use.html">Terms of Use</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-content-column">
+              <div class="footer-menu">
+                <h2 class="footer-menu-name"> Quick Links</h2>
+                <ul id="menu-quick-links" class="footer-menu-list">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                    <a target="_blank" rel="noopener noreferrer" href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Community_Page.html">Community</a>
+                  </li>
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                    <a target="_blank" rel="noopener noreferrer" href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/test.html">Assess yourself</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Library.html">Library</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Blog_Page.html">Blog</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                    <a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Emergency.html">Emergency</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/Review_Page.html">Reviews</a>
+                  </li>
+                  <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a href="https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/About_Us.html">About Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer-content-column">
+              <div class="footer-call-to-action">
+                <h2 class="footer-call-to-action-title"> Let's Chat</h2>
+                <p class="footer-call-to-action-description"> Have a support question?</p>
+                <a class="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a>
+              </div>
+              <div class="footer-call-to-action">
+                <h2 class="footer-call-to-action-title"> You Call Us</h2>
+                <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="tel:0124-64XXXX"
+                    target="_self"> 0124-64XXXX </a></p>
+              </div>
+            </div>
+            <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 236 54">
+                <path class="footer-social-amoeba-path"
+                  d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z">
+                </path>
+              </svg>
+              <a class="footer-social-link linkedin" href="#" target="_blank">
+                <span class="hidden-link-text">Linkedin</span>
+                <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                  <path class="footer-social-icon-path"
+                    d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z">
+                  </path>
+                </svg>
+              </a>
+              <a class="footer-social-link twitter" href="#" target="_blank">
+                <span class="hidden-link-text">Twitter</span>
+                <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                  <path class="footer-social-icon-path"
+                    d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 ">
+                  </path>
+                </svg>
+              </a>
+              <a class="footer-social-link youtube" href="#" target="_blank">
+                <span class="hidden-link-text">Youtube</span>
+                <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                  <path class="footer-social-icon-path"
+                    d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z">
+                  </path>
+                </svg>
+              </a>
+              <a class="footer-social-link github" href="#" target="_blank">
+                <span class="hidden-link-text">Github</span>
+                <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <path class="footer-social-icon-path"
+                    d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z ">
+                  </path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="footer-copyright-wrapper">
+              <p class="footer-copyright-text">
+                <a class="footer-copyright-link" href="#" target="_self"> ©2024. | Designed By: Team Glitch Hunters | All
+                  rights reserved. </a>
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+            </body>
+            </html>
