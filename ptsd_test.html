@@ -1,140 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Depression Test</title>
-    <link rel="stylesheet" href="depression_test.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-</head>
-<body>
-    <header>
-        <!-- header is here -->
-    </header>
-    <main class="container">
-        <h1>Depression Test</h1>
-        <div class="step">
-            <div>
-                <div class="circle">1</div>
-                <p>Test Questions</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PTSD Test</title>
+        <link rel="stylesheet" href="ptsd_test.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <!-- header is here -->
+        </header>
+        <main class="container">
+            <h1>PTSD Test</h1>
+            <div class="step">
+                <div>
+                    <div class="circle">1</div>
+                    <p>Test Questions</p>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <div class="circle">2</div>
+                    <p>Optional Questions</p>
+                </div>
+                <div class="line"></div>
+                <div>
+                    <div class="circle">3</div>
+                    <p>Your Results</p>
+                </div>
             </div>
-            <div class="line"></div>
-            <div>
-                <div class="circle">2</div>
-                <p>Optional Questions</p>
-            </div>
-            <div class="line"></div>
-            <div>
-                <div class="circle">3</div>
-                <p>Your Results</p>
-            </div>
-        </div>
-        <hr>
-        <br>
-        <form>
-            <p class="question">Over the last 2 weeks, how often have you been bothered by any of the following problems?</p>
-            <p class="note">Please note, all fields are required.</p>
-
-            <!-- Test Questions -->
-            <div class="test-question">
-                <p class="question">1. Little interest or pleasure in doing things</p>
+            <hr>
+            <br>
+            <form>
+                <p class="note">Please note, all fields are required.</p>
+                <p class="question">Sometimes things happen to people that are unusually or especially frightening, - horrible, or traumatic. For example: <br>
+                
+                    <pre><br>- a serious accident or fire
+                        <br>- a physical or sexual assault or abuse
+                        <br>- an earthquake or flood
+                        <br>- a war
+                        <br>- seeing someone be killed or seriously injured
+                        <br>- having a loved one die through homicide or suicide. <br></pre>
+                        
+                    
+                    <br>Have you ever experienced this kind of event?<br>
+                    
+                    <br><strong>If YES - please answer the questions below.</strong> <br>
+                    
+                    <br>In the past month, have you....
+                </p>
+                
+    
+                <!-- PTSD Questions -->
+            <br><div class="test-question">
+                <p class="question">1. In the past month, have you had nightmares about the event(s) or thought about the event(s) when you did not want to?</p>
                 <div class="options">
-                    <button class="option-button" type="button">NOT AT ALL</button>
-                    <button class="option-button" type="button">SEVERAL DAYS</button>
-                    <button class="option-button" type="button">MORE THAN HALF THE DAYS</button>
-                    <button class="option-button" type="button">NEARLY EVERY DAY</button>
+                    <button class="option-button" type="button">NO</button>
+                    <button class="option-button" type="button">YES</button>
                 </div>
             </div>
 
             <div class="test-question">
-                <p class="question">2. Feeling down, depressed, or hopeless</p>
+                <p class="question">2. Have you tried hard not to think about the event(s) or gone out of your way to avoid situations that reminded you of the event(s)?</p>
                 <div class="options">
-                    <button class="option-button" type="button">NOT AT ALL</button>
-                    <button class="option-button" type="button">SEVERAL DAYS</button>
-                    <button class="option-button" type="button">MORE THAN HALF THE DAYS</button>
-                    <button class="option-button" type="button">NEARLY EVERY DAY</button>
+                    <button class="option-button" type="button">NO</button>
+                    <button class="option-button" type="button">YES</button>
                 </div>
             </div>
 
             <div class="test-question">
-                <p class="question">3. Trouble falling or staying asleep, or sleeping too much</p>
+                <p class="question">3. Have you been constantly on guard, watchful, or easily startled?</p>
                 <div class="options">
-                    <button class="option-button" type="button">NOT AT ALL</button>
-                    <button class="option-button" type="button">SEVERAL DAYS</button>
-                    <button class="option-button" type="button">MORE THAN HALF THE DAYS</button>
-                    <button class="option-button" type="button">NEARLY EVERY DAY</button>
+                    <button class="option-button" type="button">NO</button>
+                    <button class="option-button" type="button">YES</button>
                 </div>
             </div>
 
             <div class="test-question">
-                <p class="question">4. Feeling tired or having little energy</p>
+                <p class="question">4. Have you felt numb or detached from people, activities, or your surroundings?</p>
                 <div class="options">
-                    <button class="option-button" type="button">NOT AT ALL</button>
-                    <button class="option-button" type="button">SEVERAL DAYS</button>
-                    <button class="option-button" type="button">MORE THAN HALF THE DAYS</button>
-                    <button class="option-button" type="button">NEARLY EVERY DAY</button>
+                    <button class="option-button" type="button">NO</button>
+                    <button class="option-button" type="button">YES</button>
                 </div>
             </div>
 
             <div class="test-question">
-                <p class="question">5. Poor appetite or overeating</p>
+                <p class="question">5. Have you felt guilty or unable to stop blaming yourself or others for the event(s) or any problems the event(s) may have caused?</p>
                 <div class="options">
-                    <button class="option-button" type="button">NOT AT ALL</button>
-                    <button class="option-button" type="button">SEVERAL DAYS</button>
-                    <button class="option-button" type="button">MORE THAN HALF THE DAYS</button>
-                    <button class="option-button" type="button">NEARLY EVERY DAY</button>
+                    <button class="option-button" type="button">NO</button>
+                    <button class="option-button" type="button">YES</button>
                 </div>
             </div>
 
-            <div class="test-question ">
-                <p class="question">6. Feeling bad about yourself, or that you are a failure, or have let yourself or your family down</p>
-                <div class="options">
-                    <button class="option-button" type="button">NOT AT ALL</button>
-                    <button class="option-button" type="button">SEVERAL DAYS</button>
-                    <button class="option-button" type="button">MORE THAN HALF THE DAYS</button>
-                    <button class="option-button" type="button">NEARLY EVERY DAY</button>
-                </div>
-            </div>
-
-            <div class="test-question">
-                <p class="question">7. Trouble concentrating on things, such as reading the newspaper or watching TV</p>
-                <div class="options">
-                    <button class="option-button" type="button">NOT AT ALL</button>
-                    <button class="option-button" type="button">SEVERAL DAYS</button>
-                    <button class="option-button" type="button">MORE THAN HALF THE DAYS</button>
-                    <button class="option-button" type="button">NEARLY EVERY DAY</button>
-                </div>
-            </div>
-
-            <div class="test-question">
-                <p class="question">8. Moving or speaking so slowly that other people could have noticed, or the opposite, being so fidgety or restless that you have been moving around a lot more than usual</p>
-                <div class="options">
-                    <button class="option-button" type="button">NOT AT ALL</button>
-                    <button class="option-button" type="button">SEVERAL DAYS</button>
-                    <button class="option-button" type="button">MORE THAN HALF THE DAYS</button>
-                    <button class="option-button" type="button">NEARLY EVERY DAY</button>
-                </div>
-            </div>
-
-            <div class="test-question">
-                <p class="question">9. Thought that you would be better off dead, or to hurt yourself in some way</p>
-                <div class="options">
-                    <button class="option-button" type="button">NOT AT ALL</button>
-                    <button class="option-button" type="button">SEVERAL DAYS</button>
-                    <button class="option-button" type="button">MORE THAN HALF THE DAYS</button>
-                    <button class="option-button" type="button">NEARLY EVERY DAY</button>
-                </div>
-            </div>
-
-            <div class="test-question">
-                <p class="question">10. If you have had any problems with your health, such as diabetes, hypertension, or heart disease, that may be contributing to your depression</p>
-                <div class="options">
-                    <button class="option-button" type="button">NOT DIFFICULT AT ALL</button>
-                    <button class="option-button" type="button">SOMEWHAT DIFFICULT</button>
-                    <button class="option-button" type="button">VERY DIFFICULT</button>
-                    <button class="option-button" type="button">EXTREMELY DIFFICULT</button>
-                </div>
-            </div>
 
             <div class="flex justify-end mt-8">
                 <button class="submit-button" type="button">NEXT <i class="fas fa-arrow-right"></i></button>
@@ -144,7 +101,6 @@
                 <button class="submit-button" type="button" id="skip-button">SKIP OPTIONAL QUESTION <i class="fas fa-arrow-right"></i></button>
             </div>
             <hr>
-
             <!-- Optional Questions Section -->
             <div class="optional-questions" style="display: none;">
                 <h2>Optional Questions</h2>
@@ -196,11 +152,11 @@
                         <option value="Asian">Asian</option>
                         <option value="Black or African American">Black or African American</option>
                         <option value="Hispanic or Latino">Hispanic or Latino</option>
-                        <option value="White">White</option>
-
+                        <option value="White">White</option> 
+                
                         <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
                         <option value="Native Hawaiian or Pacific Islander">Native Hawaiian or Pacific Islander</option> 
-
+                
                         <option value="Two or more races">Two or more races</option>
                         <option value="Others">Others</option>
                         <option value="Prefer not to say">Prefer not to say</option>
@@ -211,10 +167,10 @@
 
                 <div>
                     <p class="question"><strong>Household Income</strong></p>
-                    <p class="question">Select Your Currency</p>
+                    <p class="question">Select Your Nationality</p>
                     <select class="optional-input" id="nationality" onchange="updateIncomeOptions()">
-                        <option value="" disabled selected>Select your Currency</option>
-                        <option value="Indian">rupee</option>
+                        <option value="" disabled selected>Select your nationality</option>
+                        <option value="Indian">Indian</option>
                         <option value="Other">Other</option>
                     </select>
             
@@ -342,7 +298,7 @@
 
                 <div class="flex justify-end mt-8">
                     <button class="read-more-button" onclick="window.open('https://hellolifeline.org/', '_blank')">
-                        READ MORE ABOUT DEPRESSION
+                        READ MORE ABOUT PTSD (Post traumatic stress disorder)
                     </button>
                 </div>
 
@@ -357,23 +313,29 @@
                 <hr>
                 
 
-                <p><br><br>This is a screening tool, not a diagnosis. It's crucial to emphasize that the results suggest a possibility of depression and encourage the user to seek professional evaluation. <br><br>Here are some resources that can help: <br><a href="https://hellolifeline.org/">National Suicide Prevention Lifeline (1800-121-3667)</a> or a mental health professional.</p>
+                <p><br><br>These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start. <br><br>Here are some resources that can help: 
+                    <br><br><a href="https://www.who.int/news-room/fact-sheets/detail/post-traumatic-stress-disorder" target="_blank">WHO:- PTSD</a>
+                    <br><br><a href="https://indianpsychiatricsociety.org/" target="_blank">indian psychiatric society</a>
+                    <br><br><a href="https://hellolifeline.org/" target="_blank">National Suicide Prevention Lifeline (1800-121-3667)</a> or a mental health professional.
+                </p>
+
             </div>
         </form>
         <br><br>
         <hr> 
         <div>
             <h1>Source</h1>
-            <p>PHQ9 Copyright © Pfizer Inc. All rights reserved. Reproduced with permission. PRIME-MD ® is a trademark of Pfizer Inc.</p>
+            <p>Prins, et al. (2004). The primary care PTSD screen (PC-PTSD): Corrigendum. Primary Care Psychiatry 9(151).</p>
 
-            <p>Kroenke, Spitzer, & Williams. (2001). The PHQ‐9. Journal of General Internal Medicine 16(9), 606-613. Retrieved from </p>
-            <p><a href=" http://onlinelibrary.wiley.com/doi/10.1046/j.1525-1497.2001.016009606.x/pdf" target="_blank"> http://onlinelibrary.wiley.com/doi/10.1046/j.1525-1497.2001.016009606.x/pdf</a></p>
+            <p>Prins, A., Bovin, M. J., Kimerling, R., Kaloupek, D. G., Marx, B. P., Pless Kaiser, A., & Schnurr, P. P. (2015). The Primary Care PTSD Screen for DSM-5 (PC-PTSD-5). [Measurement instrument]. </p>
 
-            <p> <strong> Please note:</strong> Online screening tools are not diagnostic instruments. You are encouraged to share your results  with a physician or healthcare provider. HealhtEdPro, sponsors, partners, and advertisers disclaim any liability, loss, or risk incurred as a consequence, directly or indirectly, from the use and application of these screens. </p>
+            <p>PC-PTSSD is in the Public Domain and available at<a href="https://www.ptsd.va.gov/professional/assessment/screens/pc-ptsd.asp" target="_blank">https://www.ptsd.va.gov/professional/assessment/screens/pc-ptsd.asp.</a></p>
+
+            <p> <strong> Please note:</strong> Online screening tools are not diagnostic instruments. You are encouraged to share your results with a physician or healthcare provider. Mental Health America Inc., sponsors, partners, and advertisers disclaim any liability, loss, or risk incurred as a consequence, directly or indirectly, from the use and application of these screens. </p>
 
 
         </div>
     </main>
-    <script src="depression_test.js"></script>
+    <script src="ptsd_test.js"></script>
 </body>
 </html>

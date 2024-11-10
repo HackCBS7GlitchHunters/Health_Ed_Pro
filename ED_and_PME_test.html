@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ED and PME Questionnaire</title>
+    <link rel="stylesheet" href="ED_and_PME_test.css"> <!-- Your CSS file -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <!-- Header content can go here -->
+    </header>
+    <main class="container">
+        <h1>Erectile Dysfunction (ED) and Premature Ejaculation (PME) Questionnaire</h1>
+        
+        <div class="step">
+            <div>
+                <div class="circle">1</div>
+                <p>ED Questions</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <div class="circle">2</div>
+                <p>PME Questions</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <div class="circle">3</div>
+                <p>Your Results</p>
+            </div>
+        </div>
+        <hr>
+        <br>
+        
+        <form id="questionnaire">
+            <!-- ED Questions -->
+
+            <h2>Please answer the following questions regarding <strong>Erectile Dysfunction (ED)</strong></h2>
+            <p>Please answer the following questions regarding your sexual functioning. Please answer the questions as honestly and candidly as you can. If any questions or terms are unclear, please ask for clarification.</p><br>
+
+            <div class="test-question">
+                <p class="question">(IIEF 1) Over the past four weeks, how often were you able to get an erection during sexual activity?</p>
+                <select id="edits1" name="edits1">
+                    <option value="0">No sexual activity</option>
+                    <option value="1">Almost never/never</option>
+                    <option value="2">A few times (much less than half the time)</option>
+                    <option value="3">Sometimes (about half the time)</option>
+                    <option value="4">Most times (much more than half the time)</option>
+                    <option value="5">Almost always/always</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 2) Over the past four weeks, when you had erections with sexual stimulation, how often were your erections hard enough for penetration?</p>
+                <select id="edits2" name="edits2">
+                    <option value="0">No sexual activity</option>
+                    <option value="1">Almost never/never</option>
+                    <option value="2">A few times (much less than half the time)</option>
+                    <option value="3">Sometimes (about half the time)</option>
+                    <option value="4">Most times (much more than half the time)</option>
+                    <option value="5">Almost always/always</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 3) Over the past four weeks, when you attempted sexual intercourse, how often were you able to penetrate (enter) your partner?</p>
+                <select id="edits3" name="edits3">
+                    <option value="0">Did not attempt intercourse</option>
+                    <option value="1">Almost never/never</option>
+                    <option value="2">A few times (much less than half the time)</option>
+                    <option value="3">Sometimes (about half the time)</option>
+                    <option value="4">Most times (much more than half the time)</option>
+                    <option value="5">Almost always/always</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 4) Over the past four weeks, during sexual intercourse how often were you able to maintain your erection after you had penetrated (entered) your partner?</p>
+                <select id="edits4" name="edits4">
+                    <option value="0">Did not attempt intercourse</option>
+                    <option value="1">Almost never/never</option>
+                    <option value="2">A few times (much less than half the time)</option>
+                    <option value="3">Sometimes (about half the time)</option>
+                    <option value="4">Most times (much more than half the time)</option>
+                    <option value="5">Almost always/always</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 5) Over the past four weeks, during sexual intercourse, how difficult was it to maintain your erection to completion of intercourse?</p>
+                <select id="edits5" name="edits5">
+                    <option value="0">Did not attempt intercourse</option>
+                    <option value="1">Extremely difficult</option>
+                    <option value="2">Very difficult</option>
+                    <option value="3">Difficult</option>
+                    <option value="4">Slightly difficult</option>
+                    <option value="5">Not difficult</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 6) Over the past four weeks, how many times have you attempted sexual intercourse?</p>
+                <select id="edits6" name="edits6">
+                    <option value="0">No attempts</option>
+                    <option value="1">One to two attempts</option>
+                    <option value="2">Three to four attempts</option>
+                    <option value="3">Five to six attempts</option>
+                    <option value="4">Seven to ten attempts</option>
+                    <option value="5">Eleven attempts </option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 7) Over the past four weeks, when you attempted sexual intercourse, how often was it satisfactory for you?</p>
+                <select id="edits7" name="edits7">
+                    <option value="0">Did not attempt intercourse</option>
+                    <option value="1">Almost never/never</option>
+                    <option value="2">A few times (much less than half the time)</option>
+                    <option value="3">Sometimes (about half the time)</option>
+                    <option value="4">Most times (much more than half the time)</option>
+                    <option value="5">Almost always/always</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 8) Over the past four weeks, how much have you enjoyed sexual intercourse?</p>
+                <select id="edits8" name="edits8">
+                    <option value="0">No intercourse</option>
+                    <option value="1">No enjoyment</option>
+                    <option value="2">Not very enjoyable</option>
+                    <option value="3">Fairly enjoyable</option>
+                    <option value="4">Highly enjoyable</option>
+                    <option value="5">Very highly enjoyable</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 9) Over the past four weeks, when you had sexual stimulation or intercourse, how often did you ejaculate?</p>
+                <select id="edits9" name="edits9">
+                    <option value="0">No sexual stimulation/intercourse</option>
+                    <option value="1">Almost never/never</option>
+                    <option value="2">A few times (much less than half the time)</option>
+                    <option value="3">Sometimes (about half the time)</option>
+                    <option value="4">Most times (much more than half the time)</option>
+                    <option value="5">Almost always/always</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 10) Over the past four weeks, when you had sexual stimulation or intercourse, how often did you have the feeling of orgasm or climax?</p>
+                <select id="edits10" name="edits10">
+                    <option value="0">No sexual stimulation/intercourse</option>
+                    <option value="1">Almost never/never</option>
+                    <option value="2">A few times (much less than half the time)</option>
+                    <option value="3">Sometimes (about half the time)</option>
+                    <option value="4">Most times (much more than half the time)</option>
+                    <option value="5">Almost always/always</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 11) Over the past four weeks, how often have you felt sexual desire?</p>
+                <select id="edits11" name="edits11">
+                    <option value="0">Almost never/never</option>
+                    <option value="1">A few times (much less than half the time)</option>
+                    <option value="2">Sometimes (about half the time)</option>
+                    <option value="3">Most times (much more than half the time)</option>
+                    <option value="4">Almost always/always</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 12) Over the past four weeks, how would you rate your level of sexual desire?</p>
+                <select id="edits12" name="edits12">
+                    <option value="1">Very low/none at all</option>
+                    <option value="2">Low</option>
+                    <option value="3">Moderate</option>
+                    <option value="4">High</option>
+                    <option value="5">Very high</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 13) Over the past four weeks, how satisfied have you been with your overall sex life?</p>
+                <select id="edits13" name="edits13">
+                    <option value="1">Very dissatisfied</option>
+                    <option value="2">Moderately dissatisfied</option>
+                    <option value="3">About equally satisfied and dissatisfied</option>
+                    <option value="4">Moderately satisfied</option>
+                    <option value="5">Very satisfied ```html
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 14) Over the past four weeks, how satisfied have you been with your sexual relationship with your partner?</p>
+                <select id="edits14" name="edits14">
+                    <option value="1">Very dissatisfied</option>
+                    <option value="2">Moderately dissatisfied</option>
+                    <option value="3">About equally satisfied and dissatisfied</option>
+                    <option value="4">Moderately satisfied</option>
+                    <option value="5">Very satisfied</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">(IIEF 15) Over the past four weeks, how do you rate your confidence that you could get and keep an erection?</p>
+                <select id="edits15" name="edits15">
+                    <option value="1">Very low</option>
+                    <option value="2">Low</option>
+                    <option value="3">Moderate</option>
+                    <option value="4">High</option>
+                    <option value="5">Very high</option>
+                </select>
+            </div>
+            <!-- PME Questions -->
+            <h2>Please answer the following questions regarding <strong>Premature Ejaculation Diagnostic Tool (PEDT)</strong></h2>
+
+            <div class="test-question">
+                <p class="question">1. How difficult is it for you to delay ejaculation?</p>
+                <select id="pedt1" name="pedt1">
+                    <option value="0">Not difficult at all</option>
+                    <option value="1">Somewhat difficult</option>
+                    <option value="2">Moderately difficult</option>
+                    <option value="3">Very difficult</option>
+                    <option value="4">Extremely difficult</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">2. Do you ejaculate before you want to?</p>
+                <select id="pedt2" name="pedt2">
+                    <option value="0">Never or almost never (0%)</option>
+                    <option value="1">Less than half the time (25%)</option>
+                    <option value="2">About half the time (50%)</option>
+                    <option value="3">Over half the time (75%)</option>
+                    <option value="4">Always or almost always (100%)</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">3. Do you ejaculate with very little stimulation?</p>
+                <select id="pedt3" name="pedt3">
+                    <option value="0">Never or almost never (0%)</option>
+                    <option value="1">Less than half the time (25%)</option>
+                    <option value="2">About half the time (50%)</option>
+                    <option value="3">Over half the time (75%)</option>
+                    <option value="4">Always or almost always (100%)</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">4. Do you feel frustrated because of ejaculating before you want to?</p>
+                <select id="pedt4" name="pedt4">
+                    <option value="0">Not at all</option>
+                    <option value="1">Slightly</option>
+                    <option value="2">Moderately</option>
+                    <option value="3">Very</option>
+                    <option value="4">Very Extremely</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">5. How concerned are you that your time to ejaculation leaves your partner unfulfilled?</p>
+                <select id="pedt5" name="pedt5">
+                    <option value="0">Not at all</option>
+                    <option value="1">Slightly</option>
+                    <option value="2">Moderately</option>
+                    <option value="3">Very</option>
+                    <option value="4">Very Extremely</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">6. Do you feel your sexual confidence is affected by your time to ejaculation?</p>
+                <select id="pedt6" name="pedt6">
+                    <option value="0">Not at all</option>
+                    <option value="1">Slightly</option>
+                    <option value="2">Moderately</option>
+                    <option value="3">Very</option>
+                    <option value="4">Very Extremely</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">7. Do you feel you have control over the timing of your ejaculation?</p>
+                <select id="pedt7" name="pedt7">
+                    <option value="0">Not at all</option>
+                    <option value="1">Slightly</option>
+                    <option value="2">Moderately</option>
+                    <option value="3">Very</option>
+                    <option value="4">Very Extremely</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">8. Does your time to ejaculation leave you feeling disappointment with your sexual life?</p>
+                <select id="pedt8" name="pedt8">
+                    <option value="0">Not at all</option>
+                    <option value="1">Slightly</option>
+                    <option value="2">Moderately</option>
+                    <option value="3">Very</option>
+                    <option value="4">Very Extremely</option>
+                </select>
+            </div>
+
+            <div class="test-question">
+                <p class="question">9. Does your time to ejaculation leave you feeling dissatisfied with your sexual life?</p>
+                <select id="pedt9" name="pedt9">
+                    <option value="0">Not at all</option>
+                    <option value="1">Slightly</option>
+                    <option value="2">Moderately</option>
+                    <option value="3">Very</option>
+                    <option value="4">Very Extremely</option>
+                </select>
+            </div>
+
+            <div class="flex justify-end mt-8">
+                <button class="submit-button" type="button">NEXT <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="flex justify-end mt-8">
+                <button class="submit-button" type="button" id="skip-button">SKIP OPTIONAL QUESTION <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <hr>
+
+            <!-- Optional Questions Section -->
+            <div class="optional-questions" style="display: none;">
+                <h2>Optional Questions</h2>
+                <p>Please take a moment to answer the following optional questions. Your answers are totally anonymous—we won't be able to identify you based on this information. Your answers help us provide better information and support for people like you.</p>
+                <p>You can answer as many or as few questions as you would like. When you are done, scroll to the bottom of the survey and click "submit" to receive your screening results.</p>
+
+                <div>
+                    <p class="question">Are you taking this test for yourself or for someone else?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">For myself</button>
+                        <button class="option-button" type="button">For someone else</button>
+                    </div>
+                </div>
+
+                <h3>About You</h3>
+                <div>
+                    <p class="question">Age Range</p>
+                    <select class="optional-input">
+                        <option value="" disabled selected>Select your age range</option>
+                        <option value="Under 18">Under 18</option>
+                        <option value="18-24">18-24</option>
+                        <option value="25-34">25-34</option>
+                        <option value="35-44">35-44</option>
+                        <option value="45-54">45-54</option>
+                        <option value="55-64">55-64</option>
+                        <option value="65 and over">65 and over</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="question">Gender</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Female</button>
+                        <button class="option-button" type="button">Male</button>
+                        <button class="option-button" type="button">Non-Binary</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox"> Please check this box if you identify as transgender.
+                    </label>
+                </div>
+
+                <div id="ethnicityDiv" >
+                    <p class="question">Select Race/Ethnicity</p>
+                    <select class="optional-input" id="ethnicity">
+                        <option value="" disabled selected>Select your race/ethnicity</option>
+                        <option value="Asian">Asian</option>
+                        <option value="Black or African American">Black or African American</option>
+                        <option value="Hispanic or Latino">Hispanic or Latino</option>
+                        <option value="White">White</option>
+
+                        <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
+                        <option value="Native Hawaiian or Pacific Islander">Native Hawaiian or Pacific Islander</option> 
+
+                        <option value="Two or more races">Two or more races</option>
+                        <option value="Others">Others</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </div>
+            
+                
+
+                <div>
+                    <p class="question"><strong>Household Income</strong></p>
+                    <p class="question">Select Your Currency</p>
+                    <select class="optional-input" id="nationality" onchange="updateIncomeOptions()">
+                        <option value="" disabled selected>Select your Currency</option>
+                        <option value="Indian">rupee</option>
+                        <option value="Other">Other</option>
+                    </select>
+            
+                    <div id="incomeDiv" style="display: none;">
+                        <p class="question">Household Income</p>
+                        <select class="optional-input" id="householdIncome">
+                            <option value="" disabled selected>Select your household income</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div>
+                    <p class="question">Do you live in the India or another country?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">I live in the India</button>
+                        <button class="option-button" type="button">I live in another country</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">What country do you live in?</p>
+                    <input type="text" placeholder="Enter your country" class="optional-input">
+                </div>
+
+                <div>
+                    <p class="question">Zip/Postal Code</p>
+                    <input type="text" placeholder="Enter your zip/postal code" class="optional-input">
+                </div>
+
+                <div>
+                    <p class="question">Which of the following populations describes you ?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Veteran or active-duty military</button>
+                        <button class="option-button" type="button">Caregiver of someone living with emotional or physical illness</button>
+                        <button class="option-button" type="button">LGBTQ+</button>
+                        <button class="option-button" type="button">Student</button>
+                        <button class="option-button" type="button">Trauma survivor</button>
+                        <button class="option-button" type="button">New or expecting parent</button>
+                        <button class="option-button" type="button">Healthcare worker</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">Are you caring for someone with a mental or physical health condition?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Mental health condition</button>
+                        <button class="option-button" type="button">Physical health condition</button>
+                        <button class="option-button" type="button">Both mental and physical health conditions</button>
+                    </div>
+                </div>
+
+                <h3>About Your Mental Health</h3>
+                <div>
+                    <p class="question">Have you ever received treatment/support for a mental health problem?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Yes</button>
+                        <button class="option-button" type="button">No</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">Think about your mental health test. What are the main things contributing to your mental health problems right now?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Abuse or violence</button>
+                        <button class="option-button" type="button">Relationship problems (friends, family, or significant other)</button>
+                        <button class="option-button" type="button">Body image</button>
+                        <button class="option-button" type="button">Low self-esteem or self-image</button>
+                        <button class="option-button" type="button">School or work problems</button>
+                        <button class="option-button" type="button">Financial problems</button>
+                        <button class="option-button" type="button">Loneliness or isolation</button>
+                        <button class="option-button" type="button">Grief or loss of someone or something</button>
+                        <button class="option-button" type="button">Experiencing hate/bullying (including racism, homophobia, transphobia, or discrimination)</button>
+                        <button class="option-button" type="button">State of the world (war, climate, politics)</button>
+                        <button class="option-button" type="button">I don’t know (something just feels wrong)</button>
+                        <button class="option-button" type="button">Other...</button>
+                    </div>
+                </div>
+
+                <h3>About Your Health</h3>
+                <div>
+                    <p class="question">Do you currently have health insurance?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Yes</button>
+                        <button class="option-button" type="button">No</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">Do you have any of the following physical health conditions?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Heart disease</button>
+                        <button class="option-button" type="button">Reproductive health concerns (PCOS, endometriosis, infertility, etc.)</button>
+                        <button class="option-button" type="button">Diabetes</button>
+                        <button class="option-button" type="button">Cancer</button>
+                        <button class="option-button" type="button">Arthritis or other chronic pain</button>
+                        <button class="option-button" type="button">Asthma, COPD or other lung conditions</button>
+                        <button class="option-button" type="button">Movement Disorders (involuntary tics, tardive dyskinesia, etc.)</button>
+                        <button class="option-button" type="button">Digestive problems (Crohn’s, colitis, IBS, etc.)</button>
+                        <button class="option-button" type="button">Neurological conditions (epilepsy, etc.) or traumatic brain injury (TBI)</button>
+                        <button class="option-button" type="button">Other...</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">Comments</p>
+                    <textarea placeholder="Enter your comments" class="optional-input"></textarea>
+                </div>
+
+                <div>
+                    <p class="question">This field is for validation purposes and should be left unchanged.</p>
+                    <input type="text" placeholder="Do not fill this field" class="optional-input">
+                </div>
+
+                <div class="flex justify-end mt-8">
+                    <button class="submit-button" type="submit">SUBMIT <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+                <div class="results-section" style="display: none;">
+                    <hr>
+                    <h2>Your Results</h2>
+                    <p id="results-message"></p>
+    
+                    <div class="flex justify-end mt-8">
+                        <button class="read-more-button" onclick="window.open('https://hellolifeline.org/', '_blank')">
+                            READ MORE ABOUT ED / PME 
+                        </button>
+                    </div>
+
+                    <br>
+                    <hr>
+                <div class="flex justify-end mt-8">
+                    <button class="read-more-button" onclick="window.open('https://hellolifeline.org/', '_blank')">
+                        TALK TO YOUR HEALTH COMPANION
+                    </button>
+                </div>
+    
+                    <hr>
+                    
+    
+                    <p><br><br>This is a screening tool, not a diagnosis. It's crucial to emphasize that the results suggest a possibility of depression and encourage the user to seek professional evaluation. <br><br>Here are some resources that can help: <br><a href="https://www.niddk.nih.gov/health-information/urologic-diseases/erectile-dysfunction/treatment">Erectile Dysfunction</a>
+                        <br><a href="https://www.ncbi.nlm.nih.gov/books/NBK546701/">Premature Ejaculation</a>or a mental health professional.</p>
+                </div>
+        </form>
+        <br><br>
+        <hr> 
+        <div>
+            <h1>Source</h1>
+            <p>EDITS and PEDT Copyright © Your Organization. All rights reserved.</p><br>
+            <p>Erectile Dysfunction Treatment Satisfaction (EDITS)</p>
+            <p>Rosen, R., Cappelleri, J., Smith, M., Lipsky, J., & Pena, B. (1999). Development and evaluation of an abridged, 5-item version of the International Index of Erectile Function (IIEF-5) as a diagnostic tool for erectile dysfunction. International Journal of Impotence Research, 11(6), 319-326.</p>
+            <p>read more :- <a href="https://scales.arabpsychology.com/s/international-index-of-erectile-function-iief/">Erectile Dysfunction Treatment Satisfaction (EDITS)</a></p><br>
+            <p>Premature Ejaculation Diagnostic Tool (PEDT)</p>
+            <p>Spector IP, Carey MP. Incidence and prevalence of sexualdysfunctions: a critical review of the empirical literature.Arch Sex Behav 1990;19:389–408.</p>
+            <p>Diagnostic and statistical manual of mental disorders,fourth edition, text revision: DSM-IV-TR. Washington(DC): American Psychiatric Association; 2000. p. 554. Waldinger MD, Zwinderman AH, Schweitzer DH, et al.Relevance of methodological design for the interpretationof efﬁcacy of drug treatment of premature ejaculation: asystematic review and meta-analysis. Int J Imp Res2004;1:1–13</p>
+            <p>read more :- <a href="https://www.researchgate.net/publication/6529877_Development_and_Validation_of_a_Premature_Ejaculation_Diagnostic_Tool">Premature Ejaculation Diagnostic Tool (PEDT)</a></p>
+        </div>
+    </main>
+    <script src="ED_and_PME_test.js"></script>
+</body>
+</html>

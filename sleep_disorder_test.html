@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Disorder Test</title>
+    <link rel="stylesheet" href="sleep_disorder_test.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <!-- header is here -->
+    </header>
+    <main class="container">
+        <h1>Bipolar Test</h1>
+        <div class="step">
+            <div>
+                <div class="circle">1</div>
+                <p>Test Questions</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <div class="circle">2</div>
+                <p>Optional Questions</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <div class="circle">3</div>
+                <p>Your Results</p>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <form>
+            <p class="note">Please note, all fields are required.</p>
+
+            <!-- Test Questions -->
+            <div class="test-question">
+                <p class="question">1. Do you have trouble falling asleep?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">2. Do you have trouble staying asleep?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">3. Do you take anything to help you sleep?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">4. Do you use alcohol to help you sleep?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">5. Do you have any medical conditions that disrupt your sleep?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">6. Have you lost interest in hobbies or activities?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">7. Do you feel sad, irritable, or hopeless?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">8. Do you feel nervous or worried?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">9. Do you think something is wrong with your body?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">10. Are you a shift worker or is your sleep schedule irregular?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">11. Are your legs restless and/or uncomfortable before bed?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">12. Have you been told that you are restless or that you kick your legs in your sleep?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">13. Do you have any unusual behaviours or movements during sleep?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option -button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">14. Do you snore?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">15. Has anyone said that you stop breathing, gasp, snort, or choke in your sleep?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">16. Do you have difficulty staying awake during the day?</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="Never">Never</button>
+                    <button class="option-button" type="button" data-value="Rarely">Rarely</button>
+                    <button class="option-button" type="button" data-value="Occasionally">Occasionally</button>
+                    <button class="option-button" type="button" data-value="Most Nights/Days">Most Nights/Days</button>
+                    <button class="option-button" type="button" data-value="Always">Always</button>
+                </div>
+            </div>
+            <div class="flex justify-end mt-8">
+                <button class="submit-button" type="button">NEXT <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="flex justify-end mt-8">
+                <button class="submit-button" type="button" id="skip-button">SKIP OPTIONAL QUESTION <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <hr>
+
+            <!-- Optional Questions Section -->
+<div class="optional-questions" style="display: none;">
+    <h2>Optional Questions</h2>
+    <p>Please take a moment to answer the following optional questions. Your answers are totally anonymous—we won't be able to identify you based on this information. Your answers help us provide better information and support for people like you.</p>
+    <p>You can answer as many or as few questions as you would like. When you are done, scroll to the bottom of the survey and click "submit" to receive your screening results.</p>
+
+    <h3>About You</h3>
+    
+    <div>
+        <p class="question">Your Age</p>
+        <input type="text" placeholder="Enter your age" class="optional-input">
+    </div>
+
+    <div>
+        <p class="question">Your Gender</p>
+        <div class="options">
+            <button class="option-button" type="button">Female</button>
+            <button class="option-button" type="button">Male</button>
+            <button class="option-button" type="button">Non-Binary</button>
+        </div>
+    </div>
+
+    <div>
+        <label>
+            <input type="checkbox"> Please check this box if you identify as transgender.
+        </label>
+    </div>
+
+    <div>
+        <p class="question">Your Race/Ethnicity</p>
+        <select class="optional-input">
+            <option value="" disabled selected>Select your race/ethnicity</option>
+            <option value="Asian">Asian</option>
+            <option value="Black or African American">Black or African American</option>
+            <option value="Hispanic or Latino">Hispanic or Latino</option>
+            <option value="White">White</option>
+            <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
+            <option value="Native Hawaiian or Pacific Islander">Native Hawaiian or Pacific Islander</option>
+            <option value="Two or more races">Two or more races</option>
+            <option value="Others">Others</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+        </select>
+    </div>
+
+    <div>
+        <p class="question">Household Income</p>
+        <select class="optional-input">
+            <option value="" disabled selected>Select your household income</option>
+            <option value="Under $25,000">Under $25,000</option>
+            <option value="$25,000 - $49,999">$25,000 - $49,999</option>
+            <option value="$50,000 - $74,999">$50,000 - $74,999</option>
+            <option value="$75,000 - $99,999">$75,000 - $99,999</option>
+            <option value="$100,000 - $149,999">$100,000 - $149,999</option>
+            <option value="$150,000 and above">$150,000 and above</option>
+        </select>
+    </div>
+
+    <div>
+        <p class="question">Do you live in the United States or another country?</p>
+        <div class="options">
+            <button class="option-button" type="button">I live in the United States</button>
+            <button class="option-button" type="button">I live in another country</button>
+        </div>
+    </div>
+
+    <div>
+        <p class="question">Zip/Postal Code</p>
+        <input type="text" placeholder="Enter your zip/postal code" class="optional-input">
+    </div>
+
+    <div>
+        <p class="question">Which of the following populations describes you? (Select all that apply)</p>
+        <div class="options">
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Veteran or active-duty military
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Caregiver of someone living with emotional or physical illness
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                LGBTQ+
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Student
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Trauma survivor
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                New or expecting parent
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Healthcare worker
+            </label>
+        </div>
+    </div>
+
+    <h3>About Your Mental Health</h3>
+    <div>
+        <p class="question">Have you ever received treatment/support for a mental health problem?</p>
+        <div class="options">
+            <button class="option-button" type="button">Yes</button>
+            <button class="option-button" type="button">No</button>
+        </div>
+    </div>
+
+    <div>
+        <p class="question">Think about your mental health. What are the main things contributing to your mental health problems right now? (Choose up to 3)</p>
+        <div class="options">
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Abuse or violence
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Relationship problems (friends, family, or significant other)
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Body image
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Low self-esteem or self-image
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                School or work problems
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Financial problems
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Loneliness or isolation
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Grief or loss of someone or something
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Experiencing hate/bullying (including racism, homophobia, transphobia, or discrimination)
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                State of the world (war, climate, politics)
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                I don’t know (something just feels wrong)
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Other...
+            </label>
+        </div>
+    </div>
+
+    <h3>About Your Health</h3>
+    <div>
+        <p class="question">Do you currently have health insurance?</p>
+        <div class="options">
+            <button class="option-button" type="button">Yes</button>
+            <button class="option-button" type="button">No</button>
+        </div>
+    </div>
+
+    <div>
+        <p class="question">Do you have any of the following physical health conditions?</p>
+        <div class="options">
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Heart disease
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Reproductive health concerns (PCOS, endometriosis, etc.)
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Diabetes
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Cancer
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Arthritis or other chronic pain
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Asthma, COPD or other lung conditions
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Movement Disorders (involuntary tics, tardive dyskinesia, etc.)
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Digestive problems (Crohn’s, colitis, IBS, etc.)
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Neurological conditions (epilepsy, etc.) or traumatic brain injury (TBI)
+            </label>
+            <label>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+                Other...
+            </label>
+        </div>
+    </div>
+
+    <div>
+        <p class="question">Comments</p>
+        <textarea placeholder="Enter your comments" class="optional-input"></textarea>
+    </div>
+
+    <div>
+        <p class="question">This field is for validation purposes and should be left unchanged.</p>
+        <input type="text" placeholder="Do not fill this field" class="optional-input">
+    </div>
+
+    <div class="flex justify-end mt-8">
+        <button class="submit-button" type="submit">SUBMIT <i class="fas fa-arrow-right"></i></button>
+    </div>
+</div>
+
+                    <!-- Results Section -->
+                    <div class="results-section" style="display: none;">
+                        <hr>
+                        <h2>Your Results</h2>
+                        <p id="results-message"></p>
+        
+                        <div class="flex justify-end mt-8">
+                            <button class="read-more-button" onclick="window.open('https://hellolifeline.org/', '_blank')">
+                                READ MORE ABOUT SLEEP DISORDERS
+                            </button>
+                        </div>
+
+                        <br>
+                        <hr>
+                    <div class="flex justify-end mt-8">
+                        <button class="read-more-button" onclick="window.open('https://hellolifeline.org/', '_blank')">
+                            TALK TO YOUR HEALTH COMPANION
+                        </button>
+                    </div>
+
+                        <hr>
+                    
+                        <p><br><br>These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start. <br><br>Here are some resources that can help: 
+                            <br><br><a href="https://en.wikipedia.org/wiki/Sleep_disorder" target="_blank">WIKIPEDIA :- SLEEP DISORDER</a>
+                            <br><br><a href="https://indianpsychiatricsociety.org/" target="_blank">indian psychiatric society</a>
+                            <br><br><a href="https://hellolifeline.org/" target="_blank">National Suicide Prevention Lifeline (1800-121-3667)</a> or a mental health professional.
+                        </p>
+        
+                    </div>
+                </form>
+                <br><br>
+                <hr> 
+                <div>
+                    <h1>Source</h1>
+                    <p>This questionnaire is a screening tool for physicians to assist their clinical evaluation of insomnia. It 
+                        can be used to screen for a sleep disorder. Retrieved from</p>
+        
+                    <p><a href="https://www.albertadoctors.org/media/g5dienpu/sleep-disorders-questionnaire.pdf#:~:text=Sleep%20Disorders%20Questionnaire" target="_blank">https://www.albertadoctors.org/media/g5dienpu/sleep-disorders-questionnaire.pdf#:~:text=Sleep%20Disorders%20Questionnaire.</a></p>
+        
+                    <p>For more information, <a href="https://www.researchgate.net/publication/339088976_User's_guide_for_SDQ_Sleep_Disorders_Questionnaire_Version_203_2010_edition" target="_blank">click here.</a></p>
+        
+                    <p> <strong> Please note:</strong> Online screening tools are not diagnostic instruments. You are encouraged to share your results with a physician or healthcare provider. Mental Health America Inc., sponsors, partners, and advertisers disclaim any liability, loss, or risk incurred as a consequence, directly or indirectly, from the use and application of these screens. </p>
+        
+        
+                </div>
+    </main>
+    <script src="sleep_disorder_test.js"></script>
+</body>
+</html>
