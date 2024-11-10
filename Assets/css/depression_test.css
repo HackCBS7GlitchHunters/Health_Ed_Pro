@@ -23,34 +23,7 @@ header {
 .recommendation_p {
     color: #592B45;
 }
-/* .logo {
-    height: 50px;
-    display: block;
-    margin: 0 auto;
-}
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.nav-link {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #854f6c;
-    font-weight: 600;
-}
-
-.nav-button {
-    background-color: #ff8c00;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-} */
 
 h1 {
     text-align: center;
@@ -283,4 +256,252 @@ form {
 .optional-questions .optional-input:focus {
     border-color: #854f6c;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Media Queries for Responsiveness */
+
+/* For mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font size for headings */
+    }
+
+    h2 {
+        font-size: 22px; /* Smaller font size for subheadings */
+    }
+
+    h3 {
+        font-size: 18px; /* Smaller font size for smaller headings */
+    }
+
+    .step {
+        flex-direction: row; /* Stack steps in row */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .step .line {
+        width: 20px; /* Shorter line for smaller screens */
+        margin: 5px 0; /* Adjust margin for spacing */
+    }
+
+    .options {
+        flex-direction: column; /* Stack options vertically */
+        gap: 10px; /* Adjust gap for better spacing */
+    }
+
+    .option-button {
+        width: 100%; /* Full width buttons */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .submit-button, .read-more-button {
+        width: 100%; /* Full width buttons */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .optional-questions {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .optional-questions h2 {
+        font-size: 20px; /* Smaller font size for optional questions */
+    }
+
+    .optional-questions .question {
+        font-size: 16px; /* Smaller font size for optional questions */
+    }
+
+    .optional-questions .optional-input {
+        margin-bottom: 10px; /* Adjust margin for spacing */
+    }
+
+    .note {
+        font-size: 12px; /* Smaller font size for notes */
+    }
+}
+
+/* For tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    h1 {
+        font-size: 28px; /* Smaller font size for headings */
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller font size for subheadings */
+    }
+
+    h3 {
+        font-size: 20px; /* Smaller font size for smaller headings */
+    }
+
+    .step {
+        flex-direction: row; /* Stack steps in row */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .step .line {
+        width: 30px; /* Shorter line for smaller screens */
+        margin: 5px 0; /* Adjust margin for spacing */
+    }
+
+    .options {
+        flex-direction: column; /* Stack options vertically */
+        gap: 10px; /* Adjust gap for better spacing */
+    }
+
+    .option-button {
+        width: 100%; /* Full width buttons */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .submit-button, .read-more-button {
+        width: 100%; /* Full width buttons */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .optional-questions {
+        padding: 15px; /* Reduce padding */
+    }
+
+    .optional-questions h2 {
+        font-size: 22px; /* Smaller font size for optional questions */
+    }
+
+    .optional-questions .question {
+        font-size: 16px; /* Smaller font size for optional questions */
+    }
+
+    .optional-questions .optional-input {
+        margin-bottom: 10px; /* Adjust margin for spacing */
+    }
+}
+
+/* For small laptops and desktops (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 20px; /* Standard padding */
+    }
+
+    h1 {
+        font-size: 30px; /* Standard font size for headings */
+    }
+
+    h2 {
+        font-size: 26px; /* Standard font size for subheadings */
+    }
+
+    h3 {
+        font-size: 22px; /* Standard font size for smaller headings */
+    }
+
+    .step {
+        flex-direction: row; /* Align steps in a row */
+        justify-content: center; /* Center steps */
+    }
+
+    .step .line {
+        width: 50px; /* Standard line width */
+        margin: 0 10px; /* Standard margin for spacing */
+    }
+
+    .options {
+        flex-direction: row; /* Align options in a row */
+        gap: 15px; /* Standard gap for spacing */
+    }
+
+    .option-button {
+        width: auto; /* Auto width for buttons */
+        padding: 12px 25px; /* Standard padding */
+    }
+
+    .submit-button, .read-more-button {
+        width: auto; /* Auto width for buttons */
+        padding: 12px 25px; /* Standard padding */
+    }
+
+    .optional-questions {
+        padding: 20px; /* Standard padding */
+    }
+
+    .optional-questions h2 {
+        font-size: 24px; /* Standard font size for optional questions */
+    }
+
+    .optional-questions .question {
+        font-size: 18px; /* Standard font size for optional questions */
+    }
+
+    .optional-questions .optional-input {
+        margin-bottom: 15px; /* Standard margin for spacing */
+    }
+}
+
+/* For larger desktops (1025px and above) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1200px; /* Maximum width for larger screens */
+        padding: 30px; /* Standard padding */
+    }
+
+    h1 {
+        font-size: 32px; /* Standard font size for headings */
+    }
+
+    h2 {
+        font-size: 28px; /* Standard font size for subheadings */
+    }
+
+    h3 {
+        font-size: 24px; /* Standard font size for smaller headings */
+    }
+
+    .step {
+        flex-direction: row; /* Align steps in a row */
+        justify-content: center; /* Center steps */
+    }
+
+    .step .line {
+        width: 50px; /* Standard line width */
+        margin: 0 10px; /* Standard margin for spacing */
+    }
+
+    .options {
+        flex-direction: row; /* Align options in a row */
+        gap: 15px; /* Standard gap for spacing */
+    }
+
+    .option-button {
+        width: auto; /* Auto width for buttons */
+        padding: 12px 25px; /* Standard padding */
+    }
+
+    .submit-button, .read-more-button {
+        width: auto; /* Auto width for buttons */
+        padding: 12px 25px; /* Standard padding */
+    }
+
+    .optional-questions {
+        padding: 30px; /* Standard padding */
+    }
+
+    .optional-questions h2 {
+        font-size: 26px; /* Standard font size for optional questions */
+    }
+
+    .optional-questions .question {
+        font-size: 18px; /* Standard font size for optional questions */
+    }
+
+    .optional-questions .optional-input {
+        margin-bottom: 15px; /* Standard margin for spacing */
+    }
 }

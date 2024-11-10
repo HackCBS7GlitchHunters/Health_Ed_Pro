@@ -24,7 +24,6 @@ header {
     color: #592B45;
 }
 
-
 h1 {
     text-align: center;
     font-size: 32px;
@@ -258,6 +257,62 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+
+
+.options {
+    display: flex;
+    flex-direction: column; /* Stack the checkboxes vertically */
+}
+
+.options label {
+    position: relative;
+    padding-left: 30px; /* Space for the custom checkbox */
+    cursor: pointer; /* Change cursor on hover */
+    margin: 5px 0; /* Space between checkboxes */
+}
+
+.options input[type="checkbox"] {
+    display: none; /* Hide the default checkbox */
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Size of the checkbox */
+    height: 20px; /* Size of the checkbox */
+    border-radius: 50%; /* Make it round */
+    border: 2px solid #592B45; /* Border color */
+    background-color: #fff; /* Background color */
+}
+
+.options input[type="checkbox"] + .checkmark {
+    background-color: #fff; /* Default background */
+}
+
+.options input[type="checkbox"]:checked + .checkmark {
+    background-color: #C1A6B5; /* Background color when checked */
+}
+
+.options input[type="checkbox"]:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    left: 6px; /* Position the checkmark */
+    top: 12px; /* Position the checkmark */
+    width: 6px; /* Size of the checkmark */
+    height: 12px; /* Size of the checkmark */
+    border: solid black; /* Color of the checkmark */
+    border-width: 0 2px 2px 0; /* Create a checkmark shape */
+    transform: rotate(45deg); /* Rotate to make it a checkmark */
+}
+
+/* Apply the custom checkmark to each checkbox */
+.options label input[type="checkbox"] + .checkmark {
+    display: inline-block; /* Show the custom checkmark */
+}
+
+/* Base styles remain unchanged */
 
 /* Media Queries for Responsiveness */
 

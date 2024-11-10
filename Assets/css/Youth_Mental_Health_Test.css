@@ -24,7 +24,6 @@ header {
     color: #592B45;
 }
 
-
 h1 {
     text-align: center;
     font-size: 32px;
@@ -258,6 +257,7 @@ form {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Base styles remain unchanged */
 
 /* Media Queries for Responsiveness */
 
