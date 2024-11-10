@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test</title>
+    <link rel="stylesheet" href="Assets/css/OCD.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <!-- header is here -->
+    </header>
+    <main class="container">
+        <h1>OCD TEST</h1>
+        <div class="step">
+            <div>
+                <div class="circle">1</div>
+                <p>Test Questions</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <div class="circle">2</div>
+                <p>Optional Questions</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <div class="circle">3</div>
+                <p>Your Results</p>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <form>
+            <p class="question">Over the last 2 weeks, how often have you been bothered by any of the following problems?</p>
+            <p class="note">Please note, all fields are required.</p>
+
+            <!-- Test Questions -->
+            <div class="test-question">
+                <p class="question">1. Time spent on obsessions</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="0">0 hours per day</button>
+                    <button class="option-button" type="button" data-value="1">0-1 hour per day</button>
+                    <button class="option-button" type="button" data-value="2">1-3 hours per day</button>
+                    <button class="option-button" type="button" data-value="3">3-8 hours per day</button>
+                    <button class="option-button" type="button" data-value="4">More than 8 hours per day</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">2. Interference from obsessions</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="0">None</button>
+                    <button class="option-button" type="button" data-value="1">Mild</button>
+                    <button class="option-button" type="button" data-value="2">Definite but manageable</button>
+                    <button class="option-button" type="button" data-value="3">Substantial impairment</button>
+                    <button class="option-button" type="button" data-value="4">Incapacitating</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">3. Distress from obsessions</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="0">None</button>
+                    <button class="option-button" type="button" data-value="1">Little</button>
+                    <button class="option-button" type="button" data-value="2">Moderate but manageable</button>
+                    <button class="option-button" type="button" data-value="3">Severe</button>
+                    <button class="option-button" type="button" data-value="4">Near constant, disabling</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">4. Resistance to obsessions</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="0">Always resists</button>
+                    <button class="option-button" type="button" data-value="1">Much resistance</button>
+                    <button class="option-button" type="button" data-value="2">Some resistance</button>
+                    <button class="option-button" type="button" data-value="3">Often yields</button>
+                    <button class="option-button" type="button" data-value="4">Completely yields</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">5. Control over obsessions</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="0">Complete control</button>
+                    <button class="option-button" type="button" data-value="1">Much control</button>
+                    <button class="option-button" type="button" data-value="2">Some control</button>
+                    <button class="option-button" type="button" data-value="3">Little control</button>
+                    <button class="option-button" type="button" data-value="4">No control</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">6. Time spent on compulsions</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="0">0 hours per day</button>
+                    <button class="option-button" type="button" data-value="1">0-1 hour per day</button>
+                    <button class="option-button" type="button" data-value="2">1-3 hours per day</button>
+                    <button class="option-button" type="button" data-value="3">3-8 hours per day</button>
+                    <button class="option-button" type="button" data-value="4">More than 8 hours per day</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">7. Interference from compulsions</p>
+                <div class="options">
+                    <button class="option-button" type="button " data-value="0">None</button>
+                    <button class="option-button" type="button" data-value="1">Mild</button>
+                    <button class="option-button" type="button" data-value="2">Definite but manageable</button>
+                    <button class="option-button" type="button" data-value="3">Substantial impairment</button>
+                    <button class="option-button" type="button" data-value="4">Incapacitating</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">8. Distress from compulsions</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="0">None</button>
+                    <button class="option-button" type="button" data-value="1">Little</button>
+                    <button class="option-button" type="button" data-value="2">Moderate but manageable</button>
+                    <button class="option-button" type="button" data-value="3">Severe</button>
+                    <button class="option-button" type="button" data-value="4">Near constant, disabling</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">9. Resistance to compulsions</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="0">Always resists</button>
+                    <button class="option-button" type="button" data-value="1">Much resistance</button>
+                    <button class="option-button" type="button" data-value="2">Some resistance</button>
+                    <button class="option-button" type="button" data-value="3">Often yields</button>
+                    <button class="option-button" type="button" data-value="4">Completely yields</button>
+                </div>
+            </div>
+            
+            <div class="test-question">
+                <p class="question">10. Control over compulsions</p>
+                <div class="options">
+                    <button class="option-button" type="button" data-value="0">Complete control</button>
+                    <button class="option-button" type="button" data-value="1">Much control</button>
+                    <button class="option-button" type="button" data-value="2">Some control</button>
+                    <button class="option-button" type="button" data-value="3">Little control</button>
+                    <button class="option-button" type="button" data-value="4">No control</button>
+                </div>
+            </div>
+
+            <div class="flex justify-end mt-8">
+                <button class="submit-button" type="button">NEXT <i class="fas fa-arrow-right"></i></button>
+            </div>
+
+            <div class="flex justify-end mt-8">
+                <button class="submit-button" type="button" id="skip-button">SKIP OPTIONAL QUESTION <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <hr>
+
+            <!-- Optional Questions Section -->
+            <div class="optional-questions" style="display: none;">
+                <h2>Optional Questions</h2>
+                <p>Please take a moment to answer the following optional questions. Your answers are totally anonymous—we won't be able to identify you based on this information. Your answers help us provide better information and support for people like you.</p>
+                <p>You can answer as many or as few questions as you would like. When you are done, scroll to the bottom of the survey and click "submit" to receive your screening results.</p>
+
+                <div>
+                    <p class="question">Are you taking this test for yourself or for someone else?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">For myself</button>
+                        <button class="option-button" type="button">For someone else</button>
+                    </div>
+                </div>
+
+                <h3>About You</h3>
+                <div>
+                    <p class="question">Age Range</p>
+                    <select class="optional-input">
+                        <option value="" disabled selected>Select your age range</option>
+                        <option value="Under 18">Under 18</option>
+                        <option value="18-24">18-24</option>
+                        <option value="25-34">25-34</option>
+                        <option value="35-44">35-44</option>
+                        <option value="45-54">45-54</option>
+                        <option value="55-64">55-64</option>
+                        <option value="65 and over">65 and over</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="question">Gender</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Female</button>
+                        <button class="option-button" type="button">Male</button>
+                        <button class="option-button" type="button">Non-Binary</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="checkbox"> Please check this box if you identify as transgender.
+                    </label>
+                </div>
+
+                <div id="ethnicityDiv" >
+                    <p class="question">Select Race/Ethnicity</p>
+                    <select class="optional-input" id="ethnicity">
+                        <option value="" disabled selected>Select your race/ethnicity</option>
+                        <option value="Asian">Asian</option>
+                        <option value="Black or African American">Black or African American</option>
+                        <option value="Hispanic or Latino">Hispanic or Latino</option>
+                        <option value="White">White</option>
+
+                        <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
+                        <option value="Native Hawaiian or Pacific Islander">Native Hawaiian or Pacific Islander</option> 
+
+                        <option value="Two or more races">Two or more races</option>
+                        <option value="Others">Others</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </div>
+            
+                
+
+                <div>
+                    <p class="question"><strong>Household Income</strong></p>
+                    <p class="question">Select Your Currency</p>
+                    <select class="optional-input" id="nationality" onchange="updateIncomeOptions()">
+                        <option value="" disabled selected>Select your Currency</option>
+                        <option value="Indian">rupee</option>
+                        <option value="Other">Other</option>
+                    </select>
+            
+                    <div id="incomeDiv" style="display: none;">
+                        <p class="question">Household Income</p>
+                        <select class="optional-input" id="householdIncome">
+                            <option value="" disabled selected>Select your household income</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <div>
+                    <p class="question">Do you live in the India or another country?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">I live in the India</button>
+                        <button class="option-button" type="button">I live in another country</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">What country do you live in?</p>
+                    <input type="text" placeholder="Enter your country" class="optional-input">
+                </div>
+
+                <div>
+                    <p class="question">Zip/Postal Code</p>
+                    <input type="text" placeholder="Enter your zip/postal code" class="optional-input">
+                </div>
+
+                <div>
+                    <p class="question">Which of the following populations describes you ?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Veteran or active-duty military</button>
+                        <button class="option-button" type="button">Caregiver of someone living with emotional or physical illness</button>
+                        <button class="option-button" type="button">LGBTQ+</button>
+                        <button class="option-button" type="button">Student</button>
+                        <button class="option-button" type="button">Trauma survivor</button>
+                        <button class="option-button" type="button">New or expecting parent</button>
+                        <button class="option-button" type="button">Healthcare worker</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">Are you caring for someone with a mental or physical health condition?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Mental health condition</button>
+                        <button class="option-button" type="button">Physical health condition</button>
+                        <button class="option-button" type="button">Both mental and physical health conditions</button>
+                    </div>
+                </div>
+
+                <h3>About Your Mental Health</h3>
+                <div>
+                    <p class="question">Have you ever received treatment/support for a mental health problem?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Yes</button>
+                        <button class="option-button" type="button">No</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">Think about your mental health test. What are the main things contributing to your mental health problems right now?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Abuse or violence</button>
+                        <button class="option-button" type="button">Relationship problems (friends, family, or significant other)</button>
+                        <button class="option-button" type="button">Body image</button>
+                        <button class="option-button" type="button">Low self-esteem or self-image</button>
+                        <button class="option-button" type="button">School or work problems</button>
+                        <button class="option-button" type="button">Financial problems</button>
+                        <button class="option-button" type="button">Loneliness or isolation</button>
+                        <button class="option-button" type="button">Grief or loss of someone or something</button>
+                        <button class="option-button" type="button">Experiencing hate/bullying (including racism, homophobia, transphobia, or discrimination)</button>
+                        <button class="option-button" type="button">State of the world (war, climate, politics)</button>
+                        <button class="option-button" type="button">I don’t know (something just feels wrong)</button>
+                        <button class="option-button" type="button">Other...</button>
+                    </div>
+                </div>
+
+                <h3>About Your Health</h3>
+                <div>
+                    <p class="question">Do you currently have health insurance?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Yes</button>
+                        <button class="option-button" type="button">No</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">Do you have any of the following physical health conditions?</p>
+                    <div class="options">
+                        <button class="option-button" type="button">Heart disease</button>
+                        <button class="option-button" type="button">Reproductive health concerns (PCOS, endometriosis, infertility, etc.)</button>
+                        <button class="option-button" type="button">Diabetes</button>
+                        <button class="option-button" type="button">Cancer</button>
+                        <button class="option-button" type="button">Arthritis or other chronic pain</button>
+                        <button class="option-button" type="button">Asthma, COPD or other lung conditions</button>
+                        <button class="option-button" type="button">Movement Disorders (involuntary tics, tardive dyskinesia, etc.)</button>
+                        <button class="option-button" type="button">Digestive problems (Crohn’s, colitis, IBS, etc.)</button>
+                        <button class="option-button" type="button">Neurological conditions (epilepsy, etc.) or traumatic brain injury (TBI)</button>
+                        <button class="option-button" type="button">Other...</button>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="question">Comments</p>
+                    <textarea placeholder="Enter your comments" class="optional-input"></textarea>
+                </div>
+
+                <div>
+                    <p class="question">This field is for validation purposes and should be left unchanged.</p>
+                    <input type="text" placeholder="Do not fill this field" class="optional-input">
+                </div>
+
+                <div class="flex justify-end mt-8">
+                    <button class="submit-button" type="submit">SUBMIT <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+                    <!-- Results Section -->
+            <div class="results-section" style="display: none;">
+                <hr>
+                <h2>Your Results</h2>
+                <p id="results-message"></p>
+
+                <div class="flex justify-end mt-8">
+                    <button class="read-more-button" onclick="window.open('https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/OCD.html', '_blank')">
+                        READ MORE ABOUT OCD
+                    </button>
+                </div>
+
+                <br>
+                <hr>
+            <div class="flex justify-end mt-8">
+                <button class="read-more-button" onclick="window.open('https://hackcbs7glitchhunters.github.io/Health_Ed_Pro/chatbot.html', '_blank')">
+                    TALK TO YOUR HEALTH COMPANION
+                </button>
+            </div>
+
+                <hr>
+                
+
+                <p><br><br>This is a screening tool, not a diagnosis. It's crucial to emphasize that the results suggest a possibility of depression and encourage the user to seek professional evaluation. <br><br>Here are some resources that can help: <br><a href="https://hellolifeline.org/">National Suicide Prevention Lifeline (1800-121-3667)</a> or a mental health professional.</p>
+            </div>
+        </form>
+        <br><br>
+        <hr> 
+        <div>
+            <h1>Source</h1>
+            <p> Goodman, W. K., Price, L. H., Rasmussen, S. A., Mazure, C., Delgado, P., Heninger, G. R., & Charney, D. S. (1989b). The Yale-Brown Obsessive Compulsive Scale. II. Validity. Archives of General Psychiatry, 46(11), 1012-1016.</p>
+
+            <p>Goodman, W. K., Price, L. H., Rasmussen, S. A., Mazure, C., Fleischmann, R. L., Hill, C. L.,Charney, D. S. (1989a). The Yale-Brown Obsessive-Compulsive Scale. I. Development, Use, and Reliability. Archives of General Psychiatry, 46(11), 1006-1011.</p>
+            <p><a href="https://scales.arabpsychology.com/s/yale-brown-obsessive-compulsive-scale-y-bocs/" target="_blank">https://scales.arabpsychology.com/s/yale-brown-obsessive-compulsive-scale-y-bocs/.</a></p>
+
+            <p> <strong> Please note:</strong> Online screening tools are not diagnostic instruments. You are encouraged to share your results  with a physician or healthcare provider. HealhtEdPro, sponsors, partners, and advertisers disclaim any liability, loss, or risk incurred as a consequence, directly or indirectly, from the use and application of these screens. </p>
+
+
+        </div>
+    </main>
+    <script src="Assets/js/OCD.js"></script>
+</body>
+</html>
