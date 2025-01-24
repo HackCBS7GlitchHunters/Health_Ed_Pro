@@ -30,6 +30,8 @@ Creating content and features that are engaging and valuable to users is essenti
 
 Navigating the complex landscape of healthcare regulations and standards is critical. Ensuring that the platform complies with all relevant regulations can be time-consuming and requires expertise.
 
-6. Scalability:
+6.Scalability:
 
 As the user base grows, ensuring that the platform can scale effectively without compromising performance or user experience is a significant challenge.
+
+
